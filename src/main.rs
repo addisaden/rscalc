@@ -31,6 +31,9 @@ fn main() {
     let result = match expr.as_ref() {
         "+" => (slot_a + slot_b).to_string(),
         "-" => (slot_a - slot_b).to_string(),
+        "*" => (slot_a * slot_b).to_string(),
+        "/" => (slot_a / slot_b).to_string(),
+        "%" => (slot_a % slot_b).to_string(),
         _ => String::from("undefined")
     };
 
